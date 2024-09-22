@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de-de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fontawesome für verschiedene Icons-->
+    <script src="https://kit.fontawesome.com/7ed22e9cbd.js" crossorigin="anonymous"></script>
+    <!--Stylesheet um CSS auszulagern-->
+    <link rel="stylesheet" type="text/css" href="Klassisch.css">
+    <!--<link rel="stylesheet" type="text/css" href="../style.php">-->
+    <title>Klassischer-Task</title>
+  </head>
+  <body>
+      <header>
+        <nav class="navbar navbar-dark bg-info top-leiste">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="name">
+              <?php echo $_SESSION["username"]; ?></a>
+            <a class="navbar-brand" href="#">Silvester 2024</a>
+            <a class="navbar-brand" id="logout" href="../Logout/logout.php"><i class="fas fa-sign-out-alt"></i></a>
+          </div>
+        </nav>
+      </header>
+      <section class="aufgabenbereich">
+        <div class="container">
+          <br>
+          <a class="player_button" href="#"><button type="submit" name="skip_task" onclick="skipTask()">Aufgabe ändern (3/3)</button></a>
+          <form method="POST">
+            <a class="player_button"><button type="submit" name="task_done">Aufgabe erledigt</button></a>
+          </form >
+        </div>
+      </section>
+  </body>
+  <script>
+    function skipTask(){
+
+    }
+
+  </script>
+  
+</html>
